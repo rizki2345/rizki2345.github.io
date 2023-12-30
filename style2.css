@@ -1,0 +1,413 @@
+/* homehome */
+:root {
+    --pink: #036ffc;
+    --bg: #0a0a0a;
+    --shadow: 0 2px 2px rgb(0 0 0 / 0.8);
+    --pink1: #f80894;
+    --sputih: 0 2px 2px  rgba(255, 255, 255, 0.8);
+}
+.home .wood img,
+.story .wood img,
+.gallery .wood img,
+.wassalam .wood img {
+    width: 20%;
+}
+.home .berdua img {
+    width: 50%;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+.home {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+.home {
+    position: relative;
+    min-height: 100vh;
+}
+.home h1 {
+    font-family: 'Carattere', cursive;
+    font-size: 3.5rem;
+    padding-top: 1rem;
+    color: #470000;
+}
+.home h3 {
+    font-size: 2rem;
+    color: #470000;
+}
+.home h4 {
+    font-size: 1.5rem;
+    font-weight: 600px;
+    color: #470000;
+}
+.home p {
+    font-size: 0.8rem;
+}
+body {
+    font-size: 1.2rem;
+    font-family: 'Work Sans', sans-serif;
+    min-height: 2000px;
+}
+
+.home::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/tema/tema\ 1\ a.jpg);
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+.home {
+    position: relative;
+    min-height: 100vh;
+}
+
+.home .simply-countdown {
+    color: rgb(255, 255, 255);
+}
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.containerNav {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    z-index: 4;
+    background-color:#470000;
+    backdrop-filter: blur(5px);
+    bottom: 2rem;       
+    padding: 1rem 1rem;
+    border-radius: 15px;
+    gap: 1rem;
+}
+.iconNavbar {
+    font-size: 2rem;
+    color: #ffffff;
+    padding: 1rem;
+}
+.iconNavbar:hover {
+    font-size: 2rem;
+    color: #616161;
+    padding: 1rem;
+}
+
+/* mempelai */
+.mempelai {
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/tema/tema\ 1\ a.jpg);
+    background-size: cover;
+    background-position: center;
+    z-index: -2;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+.bismilah {
+    width: 90%;
+    margin-bottom: 1.5rem;
+}
+.mempelai h3 {
+    font-family: 'Carattere', cursive;
+    font-size: 3.5rem;
+    padding-top: 1rem;
+    color: #470000;
+    text-shadow: var(--sputih);
+}
+.mempelai h4 {
+    font-size: 1.5rem;
+    color: #000000;
+}
+.mempelai img {
+    width: 60%;
+}
+.mempelai p {
+    font-size: 1.5rem !important;
+    color: #000000; 
+    font-weight: 600rem;
+}
+.mempelai h1 {
+    font-size: 10rem;
+    color: #470000;
+    font-weight: 600rem;
+    font-family: 'Carattere', cursive;
+}
+.bgluar {
+    background-color: #ffa6a6;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.bgdalam {
+
+    background-color: #470000;
+}
+.sabda p {
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding-top: 0.5rem;
+}
+/* story */
+.story {
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/tema/tema\ 1\ a.jpg);
+    background-size: cover;
+    background-position: center;
+    z-index: -2;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+.story h3 {
+    font-size: 5rem;
+    color: #470000;
+    font-family: 'Carattere', cursive;
+}
+.story img {
+    width: 80%;
+}
+/* mempelai end */
+
+/* footer */
+
+/* footer end */
+
+/* audio */
+.audio-icon-wrapper {
+    width: 3rem;
+    height: 3rem;
+    font-size: 3rem;
+    position: fixed;
+    bottom: 3.5rem;
+    right: 3rem;
+    cursor: pointer;
+    color: white;
+    opacity: 0.7;
+    mix-blend-mode: difference;
+}
+/* audio end */
+
+/* acara */
+.acara {
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/tema/tema\ 1\ a.jpg);
+    background-size: cover;
+    background-position: center;
+    z-index: -2;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+.acara h3 {
+    font-size: 3.5rem;
+    color: #470000;
+    font-family: 'Carattere', cursive;
+}
+.acara img {
+    width: 80%;
+}
+/* acara end */
+
+/* gallery */
+.gallery {
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/tema/tema\ 1\ a.jpg);
+    background-size: cover;
+    background-position: center;
+    z-index: -2;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+.gallery .jr img{
+    width: 100%;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+.gallery .isi img {
+    padding: 2rem;
+}
+.gallery h3 {
+    font-size: 3.5rem;
+    color: #470000;
+    font-family: 'Carattere', cursive;
+}
+/* gallery end */
+
+/* gift */
+.gift, .wassalam, .ucapan {
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/tema/tema\ 1\ a.jpg);
+    background-size: cover;
+    background-position: center;
+    z-index: -2;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+.gift h3 {
+    font-size: 3.5rem;
+    color: #470000;
+    font-family: 'Carattere', cursive;
+}
+.gift p {
+    font-size: 1.2rem;
+    color: #000000;
+    font-weight: 600;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+.gift i {
+    font-size: 3rem;
+    color: #470000;
+}
+.bank img {
+    width: 40%;
+    padding-bottom: 3rem;
+}
+.gift .bank {
+    margin-right: 6rem;
+    margin-left: 6rem;
+    border-width: 0.5rem;
+    border-color: #470000;
+    color: #470000;
+}
+
+.gift span {
+font-weight: 600;
+font-size: 1.2rem;
+}
+.gift button {
+    background-color: #036ffc;
+    color: #ffffff;
+}
+.gift button:hover {
+    background-color: #00459e;
+    color: #ffffff;
+}
+/* gift end */
+/* wassalam */
+.wassalam p {
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+.wassalam h3 {
+    font-size: 3.5rem;
+    color: #470000;
+    font-family: 'Carattere', cursive;
+}
+.wassalam h4 {
+    font-size: 3.5rem;
+    color: #470000;
+    font-family: 'Carattere', cursive;
+}
+.wassalam img {
+    width: 50%;
+}
+/* wassalam end */
+
+/* ucapan */
+.ucapan img {
+    width: 50%;
+}
+.ucapan h3 {
+    font-size: 3.5rem;
+    color: #470000;
+    font-family: 'Carattere', cursive;
+}
+.ucapan p {
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+.ucapan .isiucapan {
+    margin-right: 6rem;
+    margin-left: 6rem;
+    border-width: 0.5rem;
+    border-color: #470000;
+    color: #470000;
+}
+.ucapan .btnucapan {
+    color: #ffffff;
+    background-color: #470000;
+    font-size: 1.2rem;
+    margin-top: -1.2rem;
+}
+/* ucapan end */
+
+/* footer */
+footer .btnwa {
+    color: rgb(65, 255, 65);
+    font-size: 2rem;
+}
+footer .btnwa:hover {
+    color: #ffffff;
+}
+footer {
+    padding: 3rem;
+background-color: #f80894;
+    color: white;
+    padding-bottom: 7rem;
+}
+footer a {
+    color: var(--bg);
+    font-weight: bold;
+    text-decoration: none;
+}
+footer a:hover {
+    color: white;
+}
+footer li {
+    list-style: none;
+    display: inline;
+    margin: 0.5rem;
+    font-size: 2rem;
+}
+/* footer end */
+
+/* laptop */
+@media (max-width: 992px) {
+    html {
+        font-size: 75%;
+    }
+    .simply-countdown>.simply-section {
+        padding: 60px !important;
+    }
+}
+/* tablet */
+@media (max-width: 768px) {
+    html {
+        font-size: 70%;
+    }
+    .simply-countdown>.simply-section {
+        padding: 50px !important;
+    }
+}
+/* mobile */
+@media (max-width: 576px) {
+    html {
+        font-size: 60%;
+    }
+    .simply-countdown>.simply-section {
+        padding: 30px !important;
+}
+}
