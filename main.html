@@ -268,7 +268,7 @@
     </section>
     <!-- wassalam end -->
 
-    <!-- ucapan -->
+        <!-- ucapan -->
     <section class="ucapan" id="ucapan">
         <div class="col justify-content-center text-center wood">
             <img src="img/tema/ornamen.png" alt="">
@@ -281,46 +281,65 @@
         </div>
         <div class="card isiucapan justify-content-center">
             <div class="card-body">
-                <form class="row row-cols-lg-8 align-items-center justify-content-center" id="myForm">
+                <form class="row row-cols-lg-8 align-items-center justify-content-center" id="myForm"
+                    onsubmit="sendMessage()">
                     <div class="mb-3">
+
                         <label for="nama" class="form-label">Nama</label>
-                        <input type="text" class="form-control" id="nama" name="nama">
+                        <input type="text" class="form-control" id="nama" placeholder="nama" required>
+
                         <label for="status" class="form-label">Konfirmasi</label>
-                        <select name="status" id="status" class="form-select">
+                        <select name="status" id="status" class="form-select" required>
                             <option selected>Kehadiran</option>
                             <option value="Hadir">Hadir</option>
                             <option value="Tidak Hadir">Tidak Hadir</option>
                             <option value="Tidak Hadir">InshaAllah</option>
                         </select>
-                        <label for="komen" class="form-label">Ucapan</label>
-                        <textarea class="form-control" id="komen" name="komen" placeholder="(Ucapan anda)"
-                            rows="3"></textarea>
+
+                        <div class="mb-3">
+                            <label for="pesan">Pesan Anda</label>
+                            <textarea id="pesan" cols="30" rows="3" class="form-control" required></textarea>
+                        </div>
+
                         <div class="col-12" style="margin-top: 25px;">
-                            <button class="btn btnucapan">Kirim</button>
+                            <button class="btn btnucapan" type="submit">Kirim Pesan</button>
                         </div>
                     </div>
             </div>
         </div>
+
+        <script>
+            function sendMessage() {
+                const nama = document.getElementById('nama').value;
+                const status = document.getElementById('status').value;
+                const pesan = document.getElementById('pesan').value;
+
+                const url = "https://api.whatsapp.com/send?phone=6281521502923&text=Halo%20Bang%0ASaya%20*" + nama + "*%0AKehadiran%20*" + status + "*%0A%0A*" + pesan + "*%0A"
+                window.open(url);
+            }
+        </script>
+
         </form>
-        <div class="row justify-content-center mt-3">
-            <div class="col-md-6">
+        <div class="card isiucapan justify-content-center mt-3">
+            <div class="card-body">
                 <div id="disqus_thread"></div>
                 <script>
                     /**
                     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
                     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+
                     var disqus_config = function () {
-                    this.page.url = rizki2345.github.io/main.html
-                    this.page.identifier = rizki2345.github.io
+                        this.page.url = rizki2345.github.io / main.html
+                        this.page.identifier = rizki2345.github.io
                     };
-                    (function() { // DON'T EDIT BELOW THIS LINE
-                    var d = document, s = d.createElement('script');
-                    s.src = 'https://tema1.disqus.com/embed.js';
-                    s.setAttribute('data-timestamp', +new Date());
-                    (d.head || d.body).appendChild(s);
+
+                    (function () { // DON'T EDIT BELOW THIS LINE
+                        var d = document, s = d.createElement('script');
+                        s.src = 'https://tema1.disqus.com/embed.js';
+                        s.setAttribute('data-timestamp', +new Date());
+                        (d.head || d.body).appendChild(s);
                     })();
                 </script>
-                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
             </div>
 
         </div>
